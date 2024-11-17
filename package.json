@@ -1,0 +1,44 @@
+{
+  "name": "biblezh.js",
+  "version": "0.1.0",
+  "main": "dist/biblezh.js",
+  "module": "dist/biblezh.js",
+  "types": "dist/biblezh.d.ts",
+  "type": "module",
+  "author": {
+    "name": "lingrottin"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lingrottin/biblezh.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lingrottin/biblezh.js/issues"
+  },
+  "homepage": "https://github.com/lingrottin/biblezh.js",
+  "scripts": {
+    "bundle": "rollup -c ./src/rollup.config.js",
+    "debug": "serve",
+    "build": "tsc",
+    "prepare": "npm run bundle&&npm run build"
+  },
+  "devDependencies": {
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.1",
+    "@rollup/plugin-image": "^3.0.3",
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.1.1",
+    "rollup": "^4.26.0",
+    "tslib": "^2.8.1",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@floating-ui/dom": "^1.6.12",
+    "lit": "^3.2.1"
+  },
+  "files": [
+    "dist/**/*"
+  ]
+}
