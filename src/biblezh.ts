@@ -470,14 +470,14 @@ export class Tooltip extends LitElement {
     }
     let meta_websites = document.querySelector("meta[name='biblezh-websites']");
     if (meta_websites) {
-      let websites; // = meta_websites.getAttribute("content")?.split(",");
+      let websites;
       websites = JSON.parse(meta_websites.getAttribute("content") || "");
       if (!Array.isArray(websites))
         websites = meta_websites.getAttribute("content")?.split(",");
       if (Array.isArray(websites)) {
         this.bibleWebsites = [];
         websites.map((website: string) => {
-          switch (website) {
+          switch (website.trim()) {
             case "yv":
               this.bibleWebsites.push("yv");
               break;
@@ -564,7 +564,6 @@ export class Tooltip extends LitElement {
                     this.chapter,
                     this.verse
                   )}
-                ?active=${index === this.index}
               >
                 <img src=${icon}></img> ${websitename}
               </div>`);

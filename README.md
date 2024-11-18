@@ -15,7 +15,10 @@ npm install biblezh.js
 Or if you prefer CDN:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/biblezh.js/dist/biblezh.bundled.js"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/biblezh.js/dist/biblezh.bundled.js"
+  type="module"
+></script>
 ```
 
 ## Usage
@@ -90,6 +93,9 @@ This package provides a document-wide configuration option.
 
 <!-- adjust the orders and the presence of Bible websites -->
 <!-- allowed values: yv bg wd zn -->
-<!-- where: yv-YouVersion bg-Bible Gateway wd-微读圣经 zn-主内圣经 -->
+<!-- where: yv-[YouVersion] bg-[Bible Gateway] wd-[微读圣经] zn-[主内圣经] -->
 <meta name="biblezh-websites" content='["yv", "bg"]' />
+
+<!-- you can also pass the websites like this -->
+<meta name="biblezh-websites" content="wd, bg" />
 ```
