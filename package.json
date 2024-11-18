@@ -1,6 +1,6 @@
 {
   "name": "biblezh.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/biblezh.js",
   "module": "dist/biblezh.js",
   "types": "dist/biblezh.d.ts",
