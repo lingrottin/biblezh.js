@@ -1,5 +1,7 @@
 # biblezh.js
 
+[![](https://img.shields.io/npm/v/biblezh.js)](https://www.npmjs.com/package/biblezh.js) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/biblezh.js) ![](https://img.shields.io/npm/types/biblezh.js) ![NPM Last Update](https://img.shields.io/npm/last-update/biblezh.js) ![GitHub License](https://img.shields.io/github/license/lingrottin/biblezh.js)
+
 Useful Web Component for displaying Bible contents.
 
 ![](/readme-assets/screenshot.png)
