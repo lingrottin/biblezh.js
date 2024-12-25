@@ -1,6 +1,6 @@
 {
   "name": "biblezh.js",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "dist/biblezh.js",
   "module": "dist/biblezh.js",
   "types": "dist/biblezh.d.ts",
@@ -36,9 +36,15 @@
   },
   "dependencies": {
     "@floating-ui/dom": "^1.6.12",
-    "lit": "^3.2.1"
+    "lit": "^3.2.1",
+    "rollup-plugin-minify-html-literals": "^1.2.6"
   },
   "files": [
     "dist/**/*"
-  ]
+  ],
+  "pnpm": {
+    "overrides": {
+      "rollup@^2.0.0": "^4.0.0"
+    }
+  }
 }

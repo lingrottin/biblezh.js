@@ -1,10 +1,10 @@
 # biblezh.js
 
-[![](https://img.shields.io/npm/v/biblezh.js)](https://www.npmjs.com/package/biblezh.js) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/biblezh.js) ![](https://img.shields.io/npm/types/biblezh.js) ![NPM Last Update](https://img.shields.io/npm/last-update/biblezh.js) ![GitHub License](https://img.shields.io/github/license/lingrottin/biblezh.js)
+[![npm](https://img.shields.io/npm/v/biblezh.js)](https://www.npmjs.com/package/biblezh.js) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/biblezh.js) ![types typescript](https://img.shields.io/npm/types/biblezh.js) ![NPM Last Update](https://img.shields.io/npm/last-update/biblezh.js) ![GitHub License](https://img.shields.io/github/license/lingrottin/biblezh.js)
 
-Useful Web Component for displaying Bible contents.
+Useful Web Component for displaying Bible contents. Merry Christmas!
 
-![](/readme-assets/screenshot.png)
+![screenshot](/readme-assets/screenshot.png)
 
 ## Including in your project
 
@@ -101,3 +101,7 @@ This package provides a document-wide configuration option.
 <!-- you can also pass the websites like this -->
 <meta name="biblezh-websites" content="wd, bg" />
 ```
+
+## Development tips
+
+Due to `rollup-plugin-minify-html-literals` which specifies an older version of `rollup`, you may need to use `pnpm` as package manager.

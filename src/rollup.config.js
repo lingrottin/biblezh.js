@@ -4,6 +4,7 @@ import typescript from '@rollup/plugin-typescript';
 import babel from '@rollup/plugin-babel';
 import image from '@rollup/plugin-image';
 import terser from '@rollup/plugin-terser';
+import minifyHTML from "rollup-plugin-minify-html-literals";
 
 export default {
   input: 'src/biblezh.ts',
@@ -12,6 +13,7 @@ export default {
     format: 'esm'
   },
   plugins: [
+    minifyHTML.default(),
     resolve(),
     commonjs(),
     typescript(),
