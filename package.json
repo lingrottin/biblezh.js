@@ -1,6 +1,6 @@
 {
   "name": "biblezh.js",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "dist/biblezh.js",
   "module": "dist/biblezh.js",
   "types": "dist/biblezh.d.ts",
@@ -32,12 +32,12 @@
     "@rollup/plugin-typescript": "^12.1.1",
     "rollup": "^4.26.0",
     "tslib": "^2.8.1",
-    "typescript": "^5.0.0"
+    "typescript": "^5.0.0",
+    "rollup-plugin-minify-html-literals": "^1.2.6"
   },
   "dependencies": {
     "@floating-ui/dom": "^1.6.12",
-    "lit": "^3.2.1",
-    "rollup-plugin-minify-html-literals": "^1.2.6"
+    "lit": "^3.2.1"
   },
   "files": [
     "dist/**/*"
